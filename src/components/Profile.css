@@ -78,7 +78,6 @@ justify-content: flex-start;
 }
 .card-header
 {
-display:flex;
 width:100%;
 }
 
@@ -86,17 +85,15 @@ width:100%;
 {
 color:black;
 background-color:white;
-display:block;
 font-weight: 900;
 padding:10px;
+position:relative;
 align-self: flex-start;
 }
 .card-header :last-child{
     color:white;
     background-color: black;
-    position:relative;
     padding:10px;
-    text-align:left;
     align-self:flex-end;
 }
 .card-body p
@@ -115,10 +112,10 @@ align-self: flex-start;
 @media screen and (min-width:1024px){
     .Profiles
     {
-        display:grid;
+        display:grid !important;
         grid-template-columns: auto auto auto;
     }
-    .card-body .col-8{
+    .card-body .col-8 .col-7 .col-6 .col-5{
         display:block;
         max-width:100%;
         flex:none;
@@ -129,7 +126,7 @@ align-self: flex-start;
     {
     display:block;
     }
-    .card-body .col-8
+    .card-body [class*=".col"]
     {
      display:block;
     }

@@ -6,16 +6,16 @@ function Profile(args) {
     else {
         return (
             <div className='Profile card'>
-                <div className="card-header">
-                    <span>#id {args.id}</span>
-                    <span>FSE CLASSROOM</span>
+                <div className="card-header clearfix">
+                    <span className='float-left'>#id {args.id}</span>
+                    <span className='float-right'>FSE CLASSROOM</span>
                 </div>
                 <div className='card-body'>
-                    <div className='row'>
-                    <div className='col-lg-4 col-sm-6 col-md-6'>
-                    <img src={args.profile} />
+                    <div className='row flex'>
+                    <div className='col-lg-4 col-sm-6 col-md-6 float-left justify-center'>
+                    <img className="img-responsive mx-auto d-block" src={args.profile} />
                     </div>
-                    <div className='col-8'>
+                    <div className='col-lg-8 col-md-6 col-sm-12 float-right'>
                         <p>Author Name</p>
                         <span className='name'>{args.name}</span>
                         <p>Age          :<span>{args.age}</span></p>
