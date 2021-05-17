@@ -24,7 +24,6 @@ import Profile from './components/Profile.js';
     </div>
   );
 }*/
-const books = {};
 var students = [
   { profile: "./profiles/avatar5.png", id: 1, name: "Hariharan", age:getAge() , follows: getFollowers(), following: getFollowers(), projects:getProjects()  },
   { profile: "./profiles/avatar1.png", id: 2, name: "Arjun", age: getAge(), follows: getFollowers(), following: getFollowers(), projects: getProjects() },
@@ -35,7 +34,7 @@ var students = [
   { profile: "./profiles/avatar1.png", id: 7, name: "Dhruv", age: getAge(), follows: getFollowers(), following: getFollowers(), projects: getProjects() },
   { profile: "./profiles/avatar2.png", id: 8, name: "Vikram", age: getAge(), follows: getFollowers(), following: getFollowers(), projects: getProjects() },
   { profile: "./profiles/avatar3.png", id: 9, name: "Ajith", age: getAge(), follows: getFollowers(), following: getFollowers(), projects: getProjects() },
-  { profile: "./profiles/avatar4.png", id: 10, name: "Stuart", age: getAge(), follows: getFollowers(), following: getFollowers(), projects: getProjects() }];
+  { profile: logo, id: 10, name: "Stuart", age: getAge(), follows: getFollowers(), following: getFollowers(), projects: getProjects() }];
 var content = "login";
 function App() {
   return (
@@ -43,7 +42,7 @@ function App() {
       <header >
         <Navigation />
       </header>
-      <Content />
+      <Content page={content}/>
       <Profile args={students} />
       <footer>
         &copy; HariharanUmapathi 2021
