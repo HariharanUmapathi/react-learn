@@ -1,0 +1,33 @@
+.nav-bar{
+    display:flex;
+    margin:0rem;
+    box-shadow:0px 0px 10px silver;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.nav-items 
+{
+    display:flex;
+    padding:10px;
+    text-decoration: underline;
+}
+.nav-bar {
+    display:block;
+}
+button
+{
+    text-decoration:none;
+    font-weight:900;
+    color:blueviolet;
+    background:none;
+    border:none;
+}
+nav li
+{
+    display:inline-block;
+}
+.title
+{
+  font-size:medium;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
